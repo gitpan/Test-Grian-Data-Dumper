@@ -4,8 +4,8 @@ Makefile.PL
 MANIFEST
 ppport.h
 README
-t/IEEE.t
 t/Test-Grian-Data-Dumper.t
+t/IEEE.t
 t/x-numbers-IEEE.dump
 lib/Test/Grian/Data/Dumper.pm
 META.yml                                 Module meta-data (added by MakeMaker)

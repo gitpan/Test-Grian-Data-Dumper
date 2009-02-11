@@ -1,6 +1,6 @@
 package Test::Grian::Data::Dumper;
 
-use 5.010000;
+# use 5.010000;
 use strict;
 use warnings;
 
@@ -25,10 +25,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
-
-require XSLoader;
-XSLoader::load('Test::Grian::Data::Dumper', $VERSION);
+our $VERSION = '0.02';
 
 # Preloaded methods go here.
 
