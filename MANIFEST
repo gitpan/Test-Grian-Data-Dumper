@@ -1,8 +1,6 @@
 Changes
-Dumper.xs
 Makefile.PL
 MANIFEST
-ppport.h
 README
 t/Test-Grian-Data-Dumper.t
 t/IEEE.t
