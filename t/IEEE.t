@@ -46,10 +46,7 @@ my ($x, $y, $z, $decimal);
 while(@numbers){
     local $_;
     ($x, $y, $_, $decimal) = unpack_rec shift @numbers;
-    $_=9 if ($_ == 0);
-    ok ( $y=~m/$_$/, " $x (df): $y ($decimal)");
-    is( length($x), length($y), " $x : $y ($decimal)length");
+    is(pack('d',$x), pack('d', $y), "packet comply with IEEE for $y");
     $z = eval $y;
-    ok ( $z=~m/$_$/, " $z (eval df) : $y ($decimal)");
-    is( length($z), length($y), " $z : $y ($decimal)length");
+    is(pack('d',$x), pack('d', $y), "packet comply with IEEE for $y eval");
 }
